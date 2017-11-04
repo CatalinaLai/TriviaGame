@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Can You Believe It?: Trivia Game</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="assets/javascript/app.js"></script>	
+	<link href="https://fonts.googleapis.com/css?family=Atma|Margarine" rel="stylesheet">
+</head>
+<body>
+<div class="bg">
+  <h1 class="quizHeader">Can You Believe It?: Trivia Game</h1>
+  <img src="assets/images/greenAlbert.png" alt="Einstein">
+  <div class="starter-containter" style="text-align: center;">
+		<button id="startButton">Start</button>
+		</div>
+	<div class="mainQuiz">
+  	<div id="timer">
+		<div>Time Left <span id="time">01:00</span> minutes!</div>
+	</div>
+  
+	<table style="width: 75%">
+	<tr>
+	  <td>
+	  	<div>
+	  		<p class="question">1. The inventor of the Frisbee was cremated and:</p>
+
+	    	<ul>
+	    	<input class="answer" type="radio" name="q1" value="1">
+	        <label id="correctString1">made into a Frisbee after he died.</label>
+	    	<br>
+	        <input class="answer" type="radio" name="q1" value="0">
+	        <label>gave a Frisbee to everyone who came to his funeral.</label>
+	        <br>
+	        <input class="answer" type="radio" name="q1" value="0">
+	        <label>was buried with a golden Frisbee.</label>
+	        <br>
+	        <input class="answer" type="radio" name="q1" value="0">
+	        <label>known as the Frisbee champion.</label>
+    		</ul>
+	  	</div>
+	  </td>
+	  <td>
+	  	<div>
+	  		<p class="question">2. Consistenly farting for 6 years and 9 months will produce enough gas to create:</p>
+
+	    	<ul>
+	        <input class="answer" type="radio" name="q2" value="0">
+	        <label>a larger hole in the ozone layer.</label>
+	        <br>
+	        <input class="answer" type="radio" name="q2" value="1">
+	        <label id="correctString2">an atomic bomb.</label>
+	        <br>
+	        <input class="answer" type="radio" name="q2" value="0">
+	        <label>a gas bomb.</label>
+	        <br>
+	        <input class="answer" type="radio" name="q2" value="0">
+	        <label>a stink bomb.</label>
+	    	</ul>
+	  	</div>
+	  </td>
+	</tr>
+	<tr>
+	  <td>
+	  	<div>
+	  		<p class="question">3. Pirates wore earrings because they believed it:</p>
+
+	    	<ul>
+	        <input class="answer" type="radio" name="q3" value="0">
+	        <label>made them look cool.</label>
+	        <br>
+	        <input class="answer" type="radio" name="q3" value="1">
+	        <label id="correctString3">improved their eyesight.</label>
+	        <br>
+	        <input class="answer" type="radio" name="q3" value="0">
+	        <label>made them look gay.</label>
+	        <br>
+	        <input class="answer" type="radio" name="q3" value="0">
+	        <label>would help them find buried treasure.</label>
+	    	</ul>
+		</div>
+	  </td>
+	  <td>
+	  	<div>
+	  		<p class="question">4. The inventor of the Waffle Iron did not like:</p>
+
+	    	<ul>
+	        <input class="answer" type="radio" name="q4" value="0">
+	        <label>Pancakes</label>
+	        <br>
+	        <input class="answer" type="radio" name="q4" value="1">
+	        <label id="correctString4">Waffles</label>
+	        <br>
+	        <input class="answer" type="radio" name="q4" value="0">
+	        <label>Chicken</label>
+	        <br>
+	        <input class="answer" type="radio" name="q4" value="0">
+	        <label>French Toast</label>
+    		</ul>
+	  	</div>
+	  </td>
+	</tr>
+	</table>
+<br/>
+  <div class="submitter" style="text-align: center;">
+          <input class="quizSubmit" id="submitButton" onClick="submitQuiz(); clearInterval(timer);"
+          type="submit" value="Submit" />
+    </div>
+  </div>
+    <div class="quizAnswers" id="correctAnswer1"></div>
+	    <div class="quizAnswers" id="correctAnswer2"></div>
+    <div class="quizAnswers" id="correctAnswer3"></div>
+    <div class="quizAnswers" id="correctAnswer4"></div>
+    <div>
+    	<h2 class="quizScore" id="userScore"></h2>
+    </div>
+	</div>
+</div>
+
+</body>
+</html>
